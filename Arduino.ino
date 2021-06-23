@@ -70,10 +70,8 @@ double measureD(){
   // Reads the echoPin, returns the sound wave travel time in microseconds
   duration = pulseIn(echoPin, HIGH);
   // Calculating the distance
-  distance = duration * 0.034 / 2; // Speed of sound wave divided by 2 (go and back)
-  // Displays the distance on the Serial Monitor
+  distance = duration * 0.034 / 2; 
   return distance;
-//  return 1000;
 }
 
 void forward() {
