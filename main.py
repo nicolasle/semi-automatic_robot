@@ -33,9 +33,7 @@ pygame.display.flip()
 destinationTag=tag.Tag([[0,0],[0,0],[0,0], [0,0]], destinationMarker)
 robotTag=tag.Tag([[0,0],[0,0],[0,0], [0,0]], destinationMarker)
 succeededCalibration = False
-# while not succeededCalibration:
-#     succeededCalibration, M=scanTags.doCalibration(img_size)
-# print(M)
+
 points=[[100,100],[540,100],[540,380], [320,240]]
 circle=[]
 for s in range(10):
