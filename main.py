@@ -57,18 +57,8 @@ for currentTagNumber in tagsToExplore:
             pygame.draw.circle(win, GREEN, [destinationTag.center.x, destinationTag.center.y], 1)
         if foundTags.isTagPresent(robotMarker):
             robotTag=foundTags.id(robotMarker)
-            # scale=motion.getScale(robotTag)
-            # distance=motion.measureDistance()+4
-            # r=distance*scale
-            # print(r)
             xRobot = robotTag.center.x
             yRobot = robotTag.center.y
-            # c=math.cos(math.radians(coord.direction(robotTag.middleDown, robotTag.middleUp)))
-            # s=-math.sin(math.radians(coord.direction(robotTag.middleDown, robotTag.middleUp)))
-            # print(c,s)
-            # print(xRobot,yRobot)
-            # print([xRobot+r*c,yRobot+r*s])
-            # pygame.draw.circle(win, WHITE, [xRobot+r*c,yRobot+r*s], 2)
             pygame.draw.polygon(win, RED, robotTag.corners)
             pygame.draw.line(win, PURPLE, robotTag.center.coord(), space.middle(robotTag.upperLeft, robotTag.upperRight).coord(), width=2)
             pygame.draw.circle(win, GREEN, [xRobot, yRobot], 1)
